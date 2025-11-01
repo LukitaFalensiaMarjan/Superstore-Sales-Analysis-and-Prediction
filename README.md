@@ -2,41 +2,6 @@
 
 Proyek ini menganalisis data penjualan Superstore selama 4 tahun (2017-2020) untuk menemukan pendorong utama keuntungan (profit) dan membangun model machine learning untuk memprediksi profitabilitas di masa depan serta total penjualan.
 
-## Struktur Folder Proyek
-
-SUPER STORE/
-├── .venv/
-├── data/
-│   ├── SuperStore_Cleaned.csv
-│   ├── SuperStore_Processed.csv
-│   └── SuperStore.csv
-├── models/
-│   ├── 1_preprocessor_reg.joblib
-│   ├── 1_regression_profit_predictor.joblib
-│   ├── 2_classification_profit_predictor.joblib
-│   ├── 2_preprocessor_cls.joblib
-│   └── 3_timeseries_sales_forecaster.joblib
-├── notebooks/
-│   ├── 1. Data Cleaning.ipynb
-│   ├── 2. Feature Engineering.ipynb
-│   ├── 3. Exploratory Analysis.ipynb
-│   ├── 4. Machine Learning - Supervised.ipynb
-│   └── 5. Time Series Forecasting.ipynb
-├── reports/
-│   └── figures/
-│       ├── 1_monthly_trends.png
-│       ├── 2_profit_by_category.png
-│       ├── 3_discount_vs_profit.png
-│       ├── 4_sales_by_geo.png
-│       ├── 5_ts_monthly_sales.png
-│       ├── 6_ts_decomposition.png
-│       ├── 7_ts_train_test_split.png
-│       ├── 8_ts_sarima_evaluation.png
-│       └── 9_ts_final_forecast.png
-├── .gitignore
-├── app.py
-└── README.md
-
 ## Temuan Utama & Wawasan (dari EDA)
 
 Setelah menganalisis data, berikut adalah 3 temuan paling penting:
