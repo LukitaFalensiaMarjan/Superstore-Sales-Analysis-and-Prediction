@@ -4,7 +4,38 @@ Proyek ini menganalisis data penjualan Superstore selama 4 tahun (2017-2020) unt
 
 ## Struktur Folder Proyek
 
-(Anda bisa salin-tempel struktur pohon dari `image_99e7c6.png` Anda di sini)
+SUPER STORE/
+├── .venv/
+├── data/
+│   ├── SuperStore_Cleaned.csv
+│   ├── SuperStore_Processed.csv
+│   └── SuperStore.csv
+├── models/
+│   ├── 1_preprocessor_reg.joblib
+│   ├── 1_regression_profit_predictor.joblib
+│   ├── 2_classification_profit_predictor.joblib
+│   ├── 2_preprocessor_cls.joblib
+│   └── 3_timeseries_sales_forecaster.joblib
+├── notebooks/
+│   ├── 1. Data Cleaning.ipynb
+│   ├── 2. Feature Engineering.ipynb
+│   ├── 3. Exploratory Analysis.ipynb
+│   ├── 4. Machine Learning - Supervised.ipynb
+│   └── 5. Time Series Forecasting.ipynb
+├── reports/
+│   └── figures/
+│       ├── 1_monthly_trends.png
+│       ├── 2_profit_by_category.png
+│       ├── 3_discount_vs_profit.png
+│       ├── 4_sales_by_geo.png
+│       ├── 5_ts_monthly_sales.png
+│       ├── 6_ts_decomposition.png
+│       ├── 7_ts_train_test_split.png
+│       ├── 8_ts_sarima_evaluation.png
+│       └── 9_ts_final_forecast.png
+├── .gitignore
+├── app.py
+└── README.md
 
 ## Temuan Utama & Wawasan (dari EDA)
 
@@ -42,11 +73,11 @@ Tiga model machine learning telah dibangun dan disimpan di folder `/models`:
 
 1.  **Model Regresi (Prediksi Profit):**
     * **Tujuan:** Memprediksi *jumlah* profit (dalam USD) dari sebuah transaksi.
-    * **Hasil:** Model ini dapat memprediksi profit dengan rata-rata error sekitar $... (Isi dengan nilai RMSE Anda) dan R-squared ... (Isi dengan nilai R2 Anda).
+    * **Hasil:** Model ini dapat memprediksi profit dengan rata-rata error sekitar $278.14 dan R-squared 0.05.
 
 2.  **Model Klasifikasi (Prediksi Status Profit):**
     * **Tujuan:** Memprediksi apakah sebuah transaksi akan 'Menguntungkan' atau 'Merugi'.
-    * **Hasil:** Model ini memiliki akurasi **...%** (Isi dengan Akurasi Anda) di data tes.
+    * **Hasil:** Model ini memiliki akurasi **94.80%** di data tes.
 
 3.  **Model Time Series (Prediksi Sales):**
     * **Tujuan:** Memprediksi total penjualan bulanan untuk 6 bulan ke depan.
